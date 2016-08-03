@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<section id="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-8">
+                <a href="#" class="btn btn-warning disabled" role="button"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> zalogowany: <strong>{{ user_name }}</strong></a>
+            </div>
+        </div>
+        <hr>
+    <div class="row">
+        <div class="col-md-2 col-md-offset-2">
+            <div class="text-center">
+                <a href="/admin">
+                    <img class="skill_img" id="efekty" src="{% static 'assets/img/dashboard.svg' %}" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="text-center">
+                <a href="/awarie_all">
+                    <img class="skill_img" id="efekty" src="{% static 'assets/img/list_all.svg' %}" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="text-center">
+                <a href="/awarie_list">
+                    <img class="skill_img" id="efekty" src="{% static 'assets/img/list_edit.svg' %}" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="text-center">
+                <a href="/new">
+                    <img class="skill_img" id="efekty" src="{% static 'assets/img/add_new.svg' %}" />
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+{% endblock %}
+

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>{{ awaria.maszyna }}</h1>
+            <h3>{{ awaria.wydzial }}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form method="POST" class="awaria-form">{% csrf_token %}
+            {{ form.as_p }}
+        
+        <div class="btn-group" role="group">
+        <input type="button" class="btn btn-danger btn-lg" value="Zgłoszona" onclick="
+        this.form.id_repair_date.value = '';
+        this.form.id_remove_date.value = '';
+        this.form.id_status.value = '1';">
+
+        <input type="button" class="btn btn-info btn-lg" value="Rozpoczęta" onclick="
+        this.form.id_repair_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 16);
+        this.form.id_remove_date.value = '';
+        this.form.id_status.value = '2';">
+
+        <input type="button" class="btn btn-success btn-lg" value="Usunięta" onclick="
+        this.form.id_remove_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 16);
+        this.form.id_status.value = '3';">
+        </div>
+        <br><br>
+        <button type="submit" class="save btn btn-primary btn-block btn-lg">ZAPISZ</button>
+        <a href="/awarie_list" class="btn btn-default btn-block btn-lg" role="button">ANULUJ</a>
+    </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
