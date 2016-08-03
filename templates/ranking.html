@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<section id="produkt">
+<div class="container">
+<div class="row">
+    {% if ranking %}
+	<table id="result_list" class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th scope="col" class="sortable column">Wydział</th>
+				<th scope="col" class="sortable column">Maszyna</th>
+				<th scope="col" class="sortable column">Opis awarii</th>
+                <th scope="col" class="sortable column">Status</th>
+				<th scope="col" class="sortable column">Zgłaszający</th>
+				<th scope="col" class="sortable column">Czas do rozpoczęcia naprawy</th>
+				<th scope="col" class="sortable column">Czas naprawy</th>
+				<th scope="col" class="sortable column">Czas od przyjęcia do zakończenia naprawy</th>
+				<th scope="col" class="sortable column">Przyjęte przez</th>
+			</tr>
+		</thead>
+		<tbody>
+        {% for awarie in ranking.object_list %}
+			<tr class="row1 text-center">
+				<td class="field-wydzial">{{ awarie.wydzial }}</td>
+				<td class="field-maszyna"><strong>{{ awarie.maszyna }}</strong></td>
+				<td class="field-opis text-justify">{{ awarie.description }}</td>
+				<th class="field-status">{{ awarie.status }}</th>
+				<td class="field-declarant">{{ awarie.user }}</td>
+				<td class="field-filing_date">{{ awarie.add_date |timesince:awarie.repair_date }}</td>
+				<td class="field-filing_date">{{ awarie.repair_date |timesince:awarie.remove_date }}</td>
+				<td class="field-filing_date">{{ awarie.add_date |timesince:awarie.remove_date }}</td>
+				<td class="field-declarant">{{ awarie.sur }}</td>
+			</tr>
+        {% endfor %}
+        </tbody>
+        {% else %}
+        <p>Brak awarii</p>
+	</table>
+        {% endif %}
+</div>
+</div>
+		<nav>
+			<ul class="pager">
+				<li>{% if ranking.has_previous %}
+						<a href="?page={{ ranking.previous_page_number }}">Poprzednia</a>
+					{% endif %}
+				</li>
+				<li> 
+					Strona: {{ ranking.number }} z {{ ranking.paginator.num_pages }}
+				</li>
+				<li>{% if ranking.has_next %}
+						<a href="?page={{ ranking.next_page_number }}">Następna</a>
+					{% endif %}
+				</li>
+			</ul>
+		</nav>
+		<nav class="p_down">
+			<ul class="pager">
+				<li>{% if ranking.has_previous %}
+						<a href="?page={{ ranking.previous_page_number }}">Poprzednia</a>
+					{% endif %}
+				</li>
+				<li> 
+					Strona: {{ ranking.number }} z {{ ranking.paginator.num_pages }}
+				</li>
+				<li>{% if ranking.has_next %}
+						<a href="?page={{ ranking.next_page_number }}">Następna</a>
+					{% endif %}
+				</li>
+			</ul>
+		</nav>
+</section>
+{% endblock %}

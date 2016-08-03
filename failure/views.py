@@ -86,3 +86,24 @@ def awarie_all(request):
     return render(request, 'awarie_all.html', {
         'awarie_all' : awarie_all
         })
+
+@login_required
+def ranking(request):
+
+    ranking_list = Awaria.objects.all().order_by('status','-add_date')
+
+    paginator = Paginator(ranking_list,15)
+
+    try:
+        page = int(request.GET.get('page', '1'))
+    except:
+        page = 1
+
+    try:
+        ranking = paginator.page(page)
+    except(EmptyPage, InvalidPage):
+        ranking = paginator.page(paginator.num_pages)
+
+    return render(request, 'ranking.html', {
+        'ranking' : ranking
+        })

@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^$', admin.site.urls),
     url(r'^awarie/$', 'failure.views.awarie'),
     url(r'^awarie_all/', 'failure.views.awarie_all'),
+    url(r'^ranking/', 'failure.views.ranking'),
 
     url(r'^login/$', 'src.views.login'),
     url(r'^auth/$', 'src.views.auth_view'),
