@@ -24,9 +24,9 @@
 				{% for awaria in awarie %}
 					<tr class="row1 text-center">
 						<td class="field-wydzial">{{ awaria.wydzial }}</td>
-						<td class="field-maszyna"><strong>{{ awaria.maszyna }}</strong></td>
+						<td class="field-maszyna"><a href="/edit/{{ awaria.id }}"><strong>{{ awaria.maszyna }}</strong></a></td>
 						<td class="field-opis text-justify"><a href="/edit/{{ awaria.id }}">{{ awaria.description }}</a></td>
-						<th class="field-status">{{ awaria.status }}</th>
+						<th class="field-status"><a href="/edit/{{ awaria.id }}">{{ awaria.status }}</a></th>
 						<td class="field-declarant">{{ awaria.user }}</td>
 						<td class="field-filing_date">{{ awaria.add_date |date:"d-m-Y H:i" }}</td>
 						<td class="field-filing_date">{{ awaria.repair_date |date:"d-m-Y H:i" }}</td>
