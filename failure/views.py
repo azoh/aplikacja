@@ -14,7 +14,7 @@ from .models import Awaria
 
 class AwariaList(ListView):
     model = Awaria
-    ordering = ("status", "add_date")
+    ordering = ("status", "-add_date")
     context_object_name = "awarie"
     paginate_by = 15
 
