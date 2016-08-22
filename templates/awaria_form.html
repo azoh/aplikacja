@@ -28,6 +28,7 @@
             <input type="button" class="btn btn-success btn-lg" value="Usunięta" onclick="
             this.form.id_remove_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
             this.form.id_status.value = '3';">
+<<<<<<< HEAD
         </div>
         <div class="btn-group" role="group">
             <input type="button" class="btn btn-waiting btn-lg" value="Oczekuje na części" onclick="
@@ -44,7 +45,25 @@
             this.form.id_repair_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
             this.form.id_remove_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
             this.form.id_status.value = '6';">
+=======
+>>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1
         </div>
+<!--
+        <div class="btn-group" role="group">
+            <input type="button" class="btn btn-warning btn-lg" value="Oczekuje na części" onclick="
+            this.form.id_repair_date.value = '';
+            this.form.id_remove_date.value = '';
+            this.form.id_status.value = '4';">
+
+            <input type="button" class="btn btn-outsourced btn-lg" value="Zlecona na zewnątrz" onclick="
+            this.form.id_remove_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
+            this.form.id_status.value = '5';">
+
+            <input type="button" class="btn btn-irreparable btn-lg" value="Nienaprawialna" onclick="
+            this.form.id_remove_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
+            this.form.id_status.value = '6';">
+        </div>
+-->
         <br><br>
         <button type="submit" class="save btn btn-primary btn-block btn-lg">ZAPISZ</button>
         <a href="/awarie_list" class="btn btn-default btn-block btn-lg" role="button">ANULUJ</a>

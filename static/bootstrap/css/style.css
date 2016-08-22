@@ -679,6 +679,7 @@ textarea {
     bottom: 7rem;
     margin-left: 40%;
 }
+<<<<<<< HEAD
 .btn-outsourced {
     color: #333;
     background-color: #66ff66;
@@ -715,10 +716,44 @@ textarea {
 	color: #333;
 	background-color: #66ff66;
 	border-color: #66ff66;
+=======
+/*
+.btn-outsourced {
+    color: #fff;
+    background-color: #66ff66;
+    border-color: #eea236;
+}
+.btn-irreparable {
+    color: #fff;
+    background-color: #99ff99;
+    border-color: #eea236;
+}
+
+.warning {
+	text-align: center;
+	color: #fff;
+	background-color: #EC971F;
+	border-color: #d43f3a;
+}
+.warning:before {
+	font-family: "Glyphicons Halflings";
+	content: "\e023";
+	margin-right: 5px;
+}
+
+
+
+.aoutsourceddd {
+	text-align: center;
+	color: #fff;
+	background-color: #66ff66;
+	border-color: #d43f3a;
+>>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1
 }
 .outsourced:before {
 	font-family: "Glyphicons Halflings";
 	content: "\e095";
+<<<<<<< HEAD
 	display: block;
     font-size: 5rem;
 }
@@ -727,10 +762,23 @@ textarea {
 	color: #333;
 	background-color: #99ff99;
 	border-color: #99ff99;
+=======
+	margin-right: 5px;
+}
+
+
+
+.irreparable {
+	text-align: center;
+	color: #fff;
+	background-color: #99ff99;
+	border-color: #d43f3a;
+>>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1
 }
 .irreparable:before {
 	font-family: "Glyphicons Halflings";
 	content: "\e020";
+<<<<<<< HEAD
 	display: block;
     font-size: 5rem;
 }
@@ -743,3 +791,8 @@ textarea {
 .field-status.irreparable > a {
     color: #333;
 }
+=======
+	margin-right: 5px;
+}
+*/
+>>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1
