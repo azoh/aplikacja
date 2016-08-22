@@ -134,4 +134,45 @@ select[name="action"] {
     background-color: #99ff99;
     border-color: #eea236;
 }
+
+.warning {
+	text-align: center;
+	color: #fff;
+	background-color: #EC971F;
+	border-color: #d43f3a;
+}
+.warning:before {
+	font-family: "Glyphicons Halflings";
+	content: "\e023";
+	margin-right: 5px;
+}
+
+
+
+.aoutsourceddd {
+	text-align: center;
+	color: #fff;
+	background-color: #66ff66;
+	border-color: #d43f3a;
+}
+.outsourced:before {
+	font-family: "Glyphicons Halflings";
+	content: "\e095";
+	margin-right: 5px;
+}
+
+
+
+.irreparable {
+	text-align: center;
+	color: #fff;
+	background-color: #99ff99;
+	border-color: #d43f3a;
+}
+.irreparable:before {
+	font-family: "Glyphicons Halflings";
+	content: "\e020";
+	margin-right: 5px;
+}
+
 */
