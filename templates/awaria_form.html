@@ -6,6 +6,7 @@
         <div class="col-md-12 text-center">
             <h1>{{ awaria.maszyna }}</h1>
             <h3>{{ awaria.wydzial }}</h3>
+            <p>{{ awarie.description }}</p>
         </div>
     </div>
     <div class="row">
@@ -14,19 +15,35 @@
             {{ form.as_p }}
         
         <div class="btn-group" role="group">
-        <input type="button" class="btn btn-danger btn-lg" value="Zgłoszona" onclick="
-        this.form.id_repair_date.value = '';
-        this.form.id_remove_date.value = '';
-        this.form.id_status.value = '1';">
+            <input type="button" class="btn btn-danger btn-lg" value="Zgłoszona" onclick="
+            this.form.id_repair_date.value = '';
+            this.form.id_remove_date.value = '';
+            this.form.id_status.value = '1';">
 
-        <input type="button" class="btn btn-info btn-lg" value="Rozpoczęta" onclick="
-        this.form.id_repair_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 16);
-        this.form.id_remove_date.value = '';
-        this.form.id_status.value = '2';">
+            <input type="button" class="btn btn-info btn-lg" value="Rozpoczęta" onclick="
+            this.form.id_repair_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
+            this.form.id_remove_date.value = '';
+            this.form.id_status.value = '2';">
 
-        <input type="button" class="btn btn-success btn-lg" value="Usunięta" onclick="
-        this.form.id_remove_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 16);
-        this.form.id_status.value = '3';">
+            <input type="button" class="btn btn-success btn-lg" value="Usunięta" onclick="
+            this.form.id_remove_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
+            this.form.id_status.value = '3';">
+        </div>
+        <div class="btn-group" role="group">
+            <input type="button" class="btn btn-waiting btn-lg" value="Oczekuje na części" onclick="
+            this.form.id_repair_date.value = '';
+            this.form.id_remove_date.value = '';
+            this.form.id_status.value = '4';">
+
+            <input type="button" class="btn btn-outsourced btn-lg" value="Zlecona na zewnątrz" onclick="
+            this.form.id_repair_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
+            this.form.id_remove_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
+            this.form.id_status.value = '5';">
+
+            <input type="button" class="btn btn-irreparable btn-lg" value="Nienaprawialna" onclick="
+            this.form.id_repair_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
+            this.form.id_remove_date.value = new Date().toISOString().slice(0, 10) + ' ' + new Date().toLocaleString().slice(11, 17);
+            this.form.id_status.value = '6';">
         </div>
         <br><br>
         <button type="submit" class="save btn btn-primary btn-block btn-lg">ZAPISZ</button>

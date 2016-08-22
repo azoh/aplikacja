@@ -11,7 +11,15 @@ $(document).ready(function() {
             case "Rozpoczęta":
                 element.addClass('wait');
             break;
+            case "Oczekuje na części":
+                element.addClass('waiting');
+            break;
+            case "Zlecona na zewnątrz":
+                element.addClass('outsourced');
+            break;
+            case "Nienaprawialna":
+                element.addClass('irreparable');
+            break;
         }
     });
 });
-
