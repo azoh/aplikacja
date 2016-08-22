@@ -123,7 +123,6 @@ select[name="action"] {
 	font-size: 2rem;
 	width: 15rem;
 }
-<<<<<<< HEAD
 .btn-outsourced {
     color: #333;
     background-color: #66ff66;
@@ -160,19 +159,7 @@ select[name="action"] {
 	color: #333;
 	background-color: #66ff66;
 	border-color: #66ff66;
-=======
-/*
-.btn-outsourced {
-    color: #fff;
-    background-color: #66ff66;
-    border-color: #eea236;
 }
-.btn-irreparable {
-    color: #fff;
-    background-color: #99ff99;
-    border-color: #eea236;
-}
-
 .warning {
 	text-align: center;
 	color: #fff;
@@ -184,20 +171,9 @@ select[name="action"] {
 	content: "\e023";
 	margin-right: 5px;
 }
-
-
-
-.aoutsourceddd {
-	text-align: center;
-	color: #fff;
-	background-color: #66ff66;
-	border-color: #d43f3a;
->>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1
-}
 .outsourced:before {
 	font-family: "Glyphicons Halflings";
 	content: "\e095";
-<<<<<<< HEAD
 	display: block;
     font-size: 5rem;
 }
@@ -206,23 +182,12 @@ select[name="action"] {
 	color: #333;
 	background-color: #99ff99;
 	border-color: #99ff99;
-=======
 	margin-right: 5px;
 }
 
-
-
-.irreparable {
-	text-align: center;
-	color: #fff;
-	background-color: #99ff99;
-	border-color: #d43f3a;
->>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1
-}
 .irreparable:before {
 	font-family: "Glyphicons Halflings";
 	content: "\e020";
-<<<<<<< HEAD
 	display: block;
     font-size: 5rem;
 }
@@ -234,10 +199,6 @@ select[name="action"] {
 }
 .field-status.irreparable > a {
     color: #333;
-}
-=======
 	margin-right: 5px;
 }
 
-*/
->>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1

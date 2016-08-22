@@ -551,9 +551,6 @@ hr.onas:after {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-.dashboard {
-
-}
 .dashboard > a {
     color: #ffffff;
     font-size: 5rem;
@@ -679,7 +676,6 @@ textarea {
     bottom: 7rem;
     margin-left: 40%;
 }
-<<<<<<< HEAD
 .btn-outsourced {
     color: #333;
     background-color: #66ff66;
@@ -690,13 +686,18 @@ textarea {
     background-color: #99ff99;
     border-color: #99ff99;
 }
-.btn-warning {
+.btn-waiting {
     color: #333;
+    background: #FFA500;
+    border-color: #FFA500;
 }
 .btn-irreparable:hover {
     color: #fff;
 }
 .btn-outsourced:hover {
+    color: #fff;
+}
+.btn-waiting:hover {
     color: #fff;
 }
 .waiting {
@@ -716,19 +717,7 @@ textarea {
 	color: #333;
 	background-color: #66ff66;
 	border-color: #66ff66;
-=======
-/*
-.btn-outsourced {
-    color: #fff;
-    background-color: #66ff66;
-    border-color: #eea236;
 }
-.btn-irreparable {
-    color: #fff;
-    background-color: #99ff99;
-    border-color: #eea236;
-}
-
 .warning {
 	text-align: center;
 	color: #fff;
@@ -740,20 +729,9 @@ textarea {
 	content: "\e023";
 	margin-right: 5px;
 }
-
-
-
-.aoutsourceddd {
-	text-align: center;
-	color: #fff;
-	background-color: #66ff66;
-	border-color: #d43f3a;
->>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1
-}
 .outsourced:before {
 	font-family: "Glyphicons Halflings";
 	content: "\e095";
-<<<<<<< HEAD
 	display: block;
     font-size: 5rem;
 }
@@ -762,23 +740,11 @@ textarea {
 	color: #333;
 	background-color: #99ff99;
 	border-color: #99ff99;
-=======
 	margin-right: 5px;
-}
-
-
-
-.irreparable {
-	text-align: center;
-	color: #fff;
-	background-color: #99ff99;
-	border-color: #d43f3a;
->>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1
 }
 .irreparable:before {
 	font-family: "Glyphicons Halflings";
 	content: "\e020";
-<<<<<<< HEAD
 	display: block;
     font-size: 5rem;
 }
@@ -790,9 +756,5 @@ textarea {
 }
 .field-status.irreparable > a {
     color: #333;
-}
-=======
 	margin-right: 5px;
 }
-*/
->>>>>>> 556f831d51cf04fbbe0971ad94f91c591eaf24c1
