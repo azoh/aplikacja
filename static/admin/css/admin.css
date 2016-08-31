@@ -144,7 +144,7 @@ select[name="action"] {
 }
 .waiting {
 	text-align: center;
-	color: #333;
+	color: #fff;
 	background-color: #EC971F;
 	border-color: #EC971F;
 }
@@ -179,9 +179,9 @@ select[name="action"] {
 }
 .irreparable {
 	text-align: center;
-	color: #333;
-	background-color: #99ff99;
-	border-color: #99ff99;
+	color: #fff;
+	background-color: #8700E1;
+	border-color: #8700E1;
 	margin-right: 5px;
 }
 
@@ -191,14 +191,14 @@ select[name="action"] {
 	display: block;
     font-size: 5rem;
 }
-.field-status.waiting > a {
+/*.field-status.waiting > a {
     color: #333;
-}
+}*/
 .field-status.outsourced > a {
     color: #333;
 }
-.field-status.irreparable > a {
+/*.field-status.irreparable > a {
     color: #333;
 	margin-right: 5px;
-}
+}*/
 

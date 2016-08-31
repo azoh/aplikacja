@@ -48,7 +48,7 @@ class AwariaUpdate(UpdateView):
 
 @login_required
 def awarie(request):
-    awarie_list = Awaria.objects.filter(status__in=[1,2]).order_by('status','add_date')
+    awarie_list = Awaria.objects.order_by('status','add_date')
 
     paginator = Paginator(awarie_list,15)
 

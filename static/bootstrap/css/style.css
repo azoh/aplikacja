@@ -682,9 +682,9 @@ textarea {
     border-color: #66ff66;
 }
 .btn-irreparable {
-    color: #333;
-    background-color: #99ff99;
-    border-color: #99ff99;
+    color: #fff;
+    background-color: #8700E1;
+    border-color: #8700E1;
 }
 .btn-waiting {
     color: #333;
@@ -692,7 +692,7 @@ textarea {
     border-color: #FFA500;
 }
 .btn-irreparable:hover {
-    color: #fff;
+    color: #ccc;
 }
 .btn-outsourced:hover {
     color: #fff;
@@ -702,7 +702,7 @@ textarea {
 }
 .waiting {
 	text-align: center;
-	color: #333;
+	color: #fff;
 	background-color: #EC971F;
 	border-color: #EC971F;
 }
@@ -737,9 +737,9 @@ textarea {
 }
 .irreparable {
 	text-align: center;
-	color: #333;
-	background-color: #99ff99;
-	border-color: #99ff99;
+	color: #fff;
+	background-color: #8700E1;
+	border-color: #8700E1;
 	margin-right: 5px;
 }
 .irreparable:before {
@@ -748,13 +748,13 @@ textarea {
 	display: block;
     font-size: 5rem;
 }
-.field-status.waiting > a {
+/*.field-status.waiting > a {
     color: #333;
-}
+}*/
 .field-status.outsourced > a {
     color: #333;
 }
-.field-status.irreparable > a {
-    color: #333;
+/*.field-status.irreparable > a {
+    color: #fff;
 	margin-right: 5px;
-}
+}*/
